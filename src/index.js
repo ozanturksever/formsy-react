@@ -234,6 +234,7 @@ class Formsy extends React.Component {
   submit = (event) => {
     if (event && event.preventDefault) {
       event.preventDefault();
+      event.stopPropagation();
     }
 
     // Trigger form as not pristine.
